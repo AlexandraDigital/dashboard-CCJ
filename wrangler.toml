@@ -16,13 +16,11 @@ database_id = "66055860-b14b-43be-a465-3d76449127f3" # Get this after creating t
 
 
 # Environment variables
-
-
 [env.production]
-vars = { ENVIRONMENT = "production" }
+vars = { RESEND_API_KEY = "re_ZRHJCw46_8QaHmmHGXFRiqFsXb6m2KFAC" }
 
-[env.development]
-vars = { ENVIRONMENT = "development" }
+
+
 
 # Triggers for scheduled tasks (optional)
 # Uncomment if you want to clean up old redeemed codes periodically
