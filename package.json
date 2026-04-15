@@ -4,11 +4,6 @@
   "description": "Golden Bakery Code Manager Dashboard",
   "main": "worker.js",
   "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev"
-  },
-  "dependencies": {
-    "@cloudflare/wrangler": "3.x"
-  },
-  "devDependencies": {}
+    "dev": "echo 'Use wrangler dev locally'"
+  }
 }
