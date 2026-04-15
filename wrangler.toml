@@ -1,6 +1,7 @@
-name = "golden-bakery-code-manager"
+name = "golden-bakery-worker"
 main = "worker.js"
 compatibility_date = "2024-01-01"
+workers_dev = true
 
 # Cloudflare Pages Project Configuration
 # This should be deployed as part of a Cloudflare Pages project
@@ -10,11 +11,6 @@ compatibility_date = "2024-01-01"
 binding = "DB"
 database_name = "golden-bakery-db"
 database_id = "YOUR_DATABASE_ID" # Get this after creating the D1 database
-
-# Routes - API endpoints
-[[routes]]
-pattern = "example.com/api/*"
-zone_name = "example.com"
 
 # Environment variables
 [env.production]
