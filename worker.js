@@ -80,17 +80,10 @@ export default {
 // Initialize database schema
 async function initDatabase(env, corsHeaders) {
   try {
-    await env.DB.exec(`
-      CREATE TABLE IF NOT EXISTS unlock_codes (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        email TEXT NOT NULL,
-        code TEXT NOT NULL UNIQUE,
-        redeemed INTEGER DEFAULT 0,
-        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-      )
-    `);
+    const sql = `CREATE TABLE IF NOT EXISTS unlock_codes (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT NOT NULL, code TEXT NOT NULL UNIQUE, redeemed INTEGER DEFAULT 0, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)`;
+    await env.DB.prepare(sql).run();
 
-    return new Response(JSON.stringify({ success: true, message: 'Database initialized' }), {
+    return new Response(JSON.stringify({ message: 'Database initialized' }), {
       headers: { 'Content-Type': 'application/json', ...corsHeaders },
     });
   } catch (error) {
