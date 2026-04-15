@@ -9,7 +9,7 @@ compatibility_date = "2024-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "golden-bakery-db"
-database_id = "YOUR_DATABASE_ID" # Get this after creating the D1 database
+database_id = "66055860-b14b-43be-a465-3d76449127f3" # Get this after creating the D1 database
 
 # Routes - API endpoints
 [[routes]]
