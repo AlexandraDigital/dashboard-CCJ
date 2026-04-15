@@ -12,7 +12,12 @@ binding = "DB"
 database_name = "golden-bakery-db"
 database_id = "66055860-b14b-43be-a465-3d76449127f3" # Get this after creating the D1 database
 
+
+
+
 # Environment variables
+
+
 [env.production]
 vars = { ENVIRONMENT = "production" }
 
