@@ -1,10 +1,14 @@
 {
-  "name": "golden-bakery-worker",
-  "version": "1.0.0",
+  "name": "dashboard-ccj",
+  "version": "0.1.0",
+  "description": "Golden Bakery Code Manager Dashboard",
+  "main": "worker.js",
   "scripts": {
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
   },
-  "devDependencies": {
-    "@cloudflare/wrangler": "^3.78.0"
-  }
+  "dependencies": {
+    "@cloudflare/wrangler": "3.x"
+  },
+  "devDependencies": {}
 }
